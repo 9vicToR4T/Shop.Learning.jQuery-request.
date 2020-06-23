@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: cornsilk;
+}
+
+.product {
+  padding: 30px 0;
+}
+
+#goods {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  background-color: tomato;
+  flex-basis: 30%;
+  height: 250px;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.75);
+}
+.nameProduct {
+  color: rgb(12, 12, 12);
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  color: #fff;
+}
+.add-to-card {
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(212, 10, 10);
+}
+.add-to-card:hover {
+  background-color: darkgreen;
+}

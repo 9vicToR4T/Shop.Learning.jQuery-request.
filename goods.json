@@ -1,0 +1,38 @@
+{
+  "11292" : {
+    "name" : "Яблоки",
+    "cost" : "12 $$",
+    "description" : "Яблоки спелые, очень красивые",
+    "image" : "images/apple.png"
+  },
+  "11294" : {
+    "name" : "Лимоны",
+    "cost" : "16 $$",
+    "description" : "Желтые лимоны, классные",
+    "image" : "images/lemon.png"
+  },
+  "11295" : {
+    "name" : "Клубника",
+    "cost" : "22 $$",
+    "description" : "Спелая и сочная клубника",
+    "image" : "images/strawberry.png"
+  },
+  "11296" : {
+    "name" : "Banana",
+    "cost" : "22 $$",
+    "description" : "Спелая и сочная клубника",
+    "image" : "images/strawberry.png"
+  },
+  "11297" : {
+    "name" : "Клубника",
+    "cost" : "22 $$",
+    "description" : "Спелая и сочная клубника",
+    "image" : "images/strawberry.png"
+  },
+  "11298" : {
+    "name" : "Клубника",
+    "cost" : "22 $$",
+    "description" : "Спелая и сочная клубника",
+    "image" : "images/strawberry.png"
+  }
+}
