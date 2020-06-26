@@ -6,14 +6,21 @@ $.getJSON("goods.json", function (data) {
   showCart(); //scoatem produsele alese in pagina
 
   function showCart() {
+    //aceasta f vizualizeaza corzina
     //special se scrie aceasta functie in interiorul altei functii pentru a nu pierde this
-    let out = "";
 
-    for (let key in cart) {
-      let pr = parseFloat(goods[key].cost);
-      console.log(pr);
 
-      out += `
+    if ($.isEmptyObject(cart)) {//daca  corzina e goala
+ let out = `You do not have products. Go to home page <a href="index.html">Home</a>`;
+ $("#my-cart").html(out);
+
+    } else {
+      let out = "";
+
+      for (let key in cart) {
+        let pr = parseFloat(goods[key].cost);
+
+        out += `
       <div class="cart-wrapp">
       <button class="delete" data-atr="${key}">x</button>
       <img class="productCart" src="${goods[key].image}" alt="">
@@ -22,14 +29,14 @@ $.getJSON("goods.json", function (data) {
       ${cart[key]}
       <button class="plus" data-atr="${key}">+</button>
       <div class="priceProductCart">${cart[key] * pr}</div>
-     </div>
-      
+     </div>  
       `;
+      }
+      $("#my-cart").html(out);
+      $(".plus").on("click", plusGoods); //functia care creste nr de produse in corzina
+      $(".minus").on("click", minusGoods); //functia care scade nr de produse in corzina
+      $(".delete").on("click", deleteGoods); //functia care sterge produsul din corzina
     }
-    $("#my-cart").html(out);
-    $(".plus").on("click", plusGoods); //functia care creste nr de produse in corzina
-    $(".minus").on("click", minusGoods); //functia care scade nr de produse in corzina
-    $(".delete").on("click", deleteGoods); //functia care sterge produsul din corzina
   }
   function minusGoods() {
     //special se scrie aceasta functie in interiorul altei functii pentru a nu pierde this
